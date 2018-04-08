@@ -1,0 +1,41 @@
+<!-- TOTALY MADE USED KONVA.JS -->
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.rawgit.com/konvajs/konva/2.0.2/konva.min.js"></script>
+    <meta charset="utf-8">
+    <title>only Konva</title>
+    <link rel="stylesheet" type="text/css" href="solarKnova.css"/>
+</head>
+<body>
+    <div id="rules">
+    
+        <ul>          <!--guidelines for perfect result!-->
+            <li>try <b>odd numbers</b> for rectangle height and width for better results</li>
+            <li><b>Step1</b> is to submit rectnagle details and click in the white area to draw rectangle</li>
+            <li><b>Step2</b>try to draw circle outside the rectangle area and the drag and drop the circle to get result</li>
+            <li><b>*</b>else if you draw circle within rectangle then drag and drop will give out the result</li>
+            <li><b>*</b>only drag and drop will fetch the result,try to point the cursor to <b>centre of circle</b> for better result</li> 
+            <li><b>important</b> the <b>inner sqaures</b> are of dimension<b>10x10</b></li>
+        </ul>
+    
+    <button onclick="fetchRect(event)">Draw Rectangle</button><!--button to activate the input form for height and width!-->
+                <form class="rectForm">                        <!--input form for height and width!-->
+                    <label>Enter the width of rectangle</label>
+                    <input type="number" required></input>
+                    <label>Enter the height of rectangle</label>
+                    <input type="number" required></input>
+                    <button type="submit" onclick="drawRect(event)">Submit</button>
+                </form><br>
+    <button id="btnCircle" onclick="fetchCircle(event)">Draw Circle</button><!--button to activate the input form for radius of circle!-->
+                <form class="circleForm">                                   <!-- input form for radius!-->
+                    <label>Enter the radius of circle</label>
+                    <input type="number" required></input>
+                    <button type="submit" onclick="drawCircle(event)">Submit</button>
+                    <label>Once you finish dragging the circles the sqaures are <b>redrawn..have patience</b></label>
+                </form>
+    </div>
+    <div id="container"></div>          <!--constainer where rectangle circle and sqaures are drawn!-->
+    <script src="solarKnova.js"></script>
+</body>
+</html>

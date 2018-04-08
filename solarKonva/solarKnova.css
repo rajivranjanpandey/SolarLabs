@@ -1,0 +1,26 @@
+body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        #rules{
+            background-color:grey;
+        }
+        ul{
+            color:white;
+        }
+        b{
+            color:black;
+        }
+        button{
+            margin:10px;
+        }
+        form{
+            margin-left:10px;
+        }
+        .rectForm,.circleForm,#btnCircle{
+                display: none;
+        }
+        #container{
+            background-color: white;
+        }
