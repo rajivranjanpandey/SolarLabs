@@ -1,0 +1,26 @@
+body{
+			margin:0;
+			padding:0;
+		}
+		.forms{
+			height:100px;
+			width:100%;
+			background-color: grey;
+			padding:10px;
+		}
+		.circle{
+			margin-top:10px;
+			display:none;
+		}
+		canvas{
+			background-color:white;
+		}
+		.draw{
+			display:none;
+		}
+		.heading,.headingCircle,.headingSquare{
+			color:black;
+			margin-left:10px;
+			font-size: 14px;
+			display:none;
+		}

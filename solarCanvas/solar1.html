@@ -1,0 +1,33 @@
+<!-- TOTALY MADE USING HTML CANVAS -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>only canvas</title>
+	<link rel="stylesheet" type="text/css" href="solar1.css"></link>
+</head>
+<body>
+	<div class="forms"> <!-- div for form inputs and submit!-->
+		<form>
+			<label>Height of rectangle</label>
+			<input type="number" required placeholder="try odd values >20 suggested:310">
+			<label>Width of rectangle</label>
+			<input type="number" required placeholder="try odd values >20 suggested:310">
+			<button type="submit" onclick="init(event)">Submit</button>
+			<label class="heading">"Click anywhere in the white area to draw "</label>	
+		</form>
+		<form class="circle">
+			<label>Radius of Circle</label>
+			<input type="number" required placeholder="radius value of circle"></input>
+			<input type="submit" onclick="drawCircle(event)"></input>
+			<label class="headingCircle">"better results:draw circle within sqaure->click in white area in sqaure"</label>
+		</form><br>
+			<button class="draw" onclick="drawSquare()">Draw Square</button>
+			<label class="headingSquare">"Sqaure size are 1x1 "</label>	
+		</div>
+
+		<canvas></canvas> <!-- canvas element where all the shapes are drawn !-->
+		<script src="solar1.js"></script>
+	
+</body>
+</html>
